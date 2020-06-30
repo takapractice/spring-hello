@@ -1,6 +1,6 @@
 # spring-hello
 
-最もシンプルなSpringのControllerとそのテスト
+シンプルなSpringのControllerとそのテスト
 
 GitHub Actionsの例
 
