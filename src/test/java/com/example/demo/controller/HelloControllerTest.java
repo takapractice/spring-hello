@@ -9,8 +9,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import java.util.Objects;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -31,7 +29,7 @@ class HelloControllerTest {
     }
 
     @Test
-    void helloページにアクセスしたらレスポンス200と想定したviewが返ること() throws Exception {
+    void helloページにアクセスしたらhelloが返ること() throws Exception {
         final var mvcResult = this.mockMvc.perform(get("/hello"))
                 .andDo(print()).andExpect(status().isOk()).andReturn();
         String content = mvcResult.getResponse().getContentAsString();
