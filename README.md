@@ -2,6 +2,6 @@
 
 シンプルなSpringのControllerとそのテスト
 
-GitHub Actionsの例
+GitHub Actions CIの例
 
-CircleCIの例
+CircleCI CI/CDの例
